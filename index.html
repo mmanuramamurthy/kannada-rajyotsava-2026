@@ -331,6 +331,8 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.5);
             border: 1px solid rgba(201, 164, 92, 0.2);
             aspect-ratio: 16/9;
+            height: 0;
+            padding-bottom: 56.25%;
         }
 
         .video-fallback {
@@ -879,18 +881,18 @@
                 <div class="section-divider"></div>
             </div>
 
-            <!-- Fallback for Pinterest Embed (Best practice for responsiveness/security without auth) -->
             <div class="video-container reveal">
-                <a href="https://pin.it/2EarjPFqq" target="_blank" rel="noopener noreferrer" class="video-fallback" aria-label="Watch the Official Festival Video on Pinterest">
-                    <div class="play-btn">
-                        <i class="fas fa-play"></i>
-                    </div>
-                </a>
-            </div>
-            <div class="text-center" style="margin-top: 2rem;">
-                <a href="https://pin.it/2EarjPFqq" target="_blank" rel="noopener noreferrer" class="text-gold" style="font-size: 0.9rem; letter-spacing: 1px; text-transform: uppercase;">
-                    <i class="fab fa-pinterest"></i> View Official Video on Pinterest
-                </a>
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/m2pLKwlops4?si=JU2OzlsercXRAN_A"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                </iframe>
             </div>
         </div>
     </section>
