@@ -139,6 +139,14 @@
             opacity: 0; transform: translateY(30px);
             animation: fadeUp 1.2s cubic-bezier(0.2,0.8,0.2,1) forwards 0.5s;
         }
+        .hero-flag-img {
+            width: 120px;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            margin: 0 auto 1.5rem auto;
+            display: block;
+            border: 2px solid rgba(212,175,55,0.4);
+        }
         .hero-eyebrow {
             display: inline-block; font-family: 'Montserrat', sans-serif;
             font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;
@@ -395,7 +403,9 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" style="display:flex;align-items:center;gap:10px;">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Karnataka.svg"
+                     alt="Karnataka Flag" style="width:36px;height:auto;border-radius:2px;border:1px solid rgba(212,175,55,0.3);">
                 <h3><span class="kannada-text">ಕರ್ನಾಟಕ</span> PRIDE</h3>
             </a>
             <div class="nav-links" id="navLinks">
@@ -409,11 +419,18 @@
         </div>
     </nav>
 
-    <!-- Hero — background: Hampi Virupaksha Temple ruins -->
+    <!-- Hero — background: Mysore Palace -->
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
+            <!-- Karnataka Rajyotsava Flag -->
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Karnataka.svg"
+                alt="Karnataka Flag — ಕರ್ನಾಟಕ ಧ್ವಜ"
+                class="hero-flag-img"
+                loading="eager"
+            >
             <div class="hero-eyebrow">28 November 2026 &nbsp;•&nbsp; Purva Zenium, Bengaluru</div>
             <h1 class="hero-main-title kannada-text">ಕನ್ನಡವೇ ನಮ್ಮ ಉಸಿರು</h1>
             <h2 class="hero-sub-title">KANNADA IS OUR PRIDE</h2>
