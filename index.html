@@ -1,177 +1,770 @@
 <!DOCTYPE html>
-<html lang="kn">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026 | Kannada Rajyotsava</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600;700;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#FFF8E1;color:#333;overflow-x:hidden}
-.kn{font-family:'Baloo Tamma 2',cursive}
-header{background:linear-gradient(180deg,#FFD600 50%,#D32F2F 50%);padding:28px 16px 22px;text-align:center;color:#fff}
-header h1{font-size:32px;line-height:1.2;color:#B71C1C;text-shadow:0 2px 0 #fff}
-header h1 span{display:block;font-size:17px;color:#fff;background:#B71C1C;padding:6px 14px;border-radius:20px;margin-top:10px}
-header p{color:#5D4037;font-weight:600;margin-top:10px}
-.flag{font-size:48px;animation:wave 1.5s infinite;display:inline-block}
-@keyframes wave{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
-.badge{background:#fff;color:#D32F2F;display:inline-block;padding:6px 16px;border-radius:20px;font-weight:800;margin-top:12px;box-shadow:0 4px 10px rgba(0,0,0,.15)}
-.container{padding:18px;max-width:650px;margin:auto}
-.card{background:#fff;border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 6px 20px rgba(0,0,0,.08);border-top:5px solid #FFD600}
-.card h2{color:#B71C1C;font-size:22px;margin-bottom:10px}
-.card p{line-height:1.7;font-size:15px}
-.quote{background:#FFF3CD;border-left:5px solid #D32F2F;padding:14px;border-radius:10px;margin:12px 0;font-style:italic}
-.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-.history-grid div{background:#FFF8E1;padding:12px;border-radius:12px;text-align:center}
-.history-grid b{font-size:22px;color:#D32F2F;display:block}
-input{width:100%;padding:14px;border:2px solid #FFD600;border-radius:12px;font-size:16px;outline:none;margin:10px 0}
-.btn{background:#D32F2F;color:#fff;border:none;padding:14px;width:100%;border-radius:12px;font-size:16px;font-weight:800;cursor:pointer}
-.btn-yellow{background:#FFD600;color:#7B1E00;margin-top:10px}
-.btn-green{background:#25D366;margin-top:10px}
-.btn-dark{background:#333;margin-top:10px}
-#wishCard{display:none;background:linear-gradient(180deg,#FFD600 50%,#D32F2F 50%);padding:24px;border-radius:18px;text-align:center;color:#fff;margin-top:16px}
-#wishCard h3{font-size:26px;color:#B71C1C;background:#fff;padding:10px;border-radius:12px}
-#wishCard p{color:#fff;font-weight:600;margin-top:12px}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-.gallery figure{border-radius:14px;overflow:hidden;background:#eee;position:relative}
-.gallery img{width:100%;height:140px;object-fit:cover;display:block}
-.gallery figcaption{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.6);color:#fff;font-size:12px;padding:6px;text-align:center}
-.countdown{display:flex;gap:8px;justify-content:center;margin-top:14px}
-.countdown div{background:#B71C1C;color:#fff;padding:12px 10px;border-radius:12px;min-width:68px;text-align:center}
-.countdown b{font-size:22px;display:block}
-.countdown span{font-size:11px;opacity:.9}
-audio{width:100%;margin-top:10px}
-.lyrics{background:#FFF8E1;padding:14px;border-radius:12px;margin-top:12px;font-size:14px;line-height:1.8;text-align:center}
-footer{text-align:center;padding:20px;font-size:13px;color:#777}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kannada Rajyotsava 2026 | Purva Zenium</title>
+    <meta name="description" content="Join us in celebrating Kannada Rajyotsava 2026 at Purva Zenium, Bengaluru. Celebrating the Spirit, Heritage & Glory of Karnataka.">
+    <meta property="og:title" content="Kannada Rajyotsava 2026 | Purva Zenium">
+    <meta property="og:description" content="Experience a premium cultural celebration of Karnataka's heritage. Namma Karnataka – Namma Hemme.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;700;800&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ── Red & Gold Palette ── */
+        :root {
+            --gold:        #D4AF37;
+            --gold-light:  #E8C84A;
+            --gold-dim:    #A8862A;
+            --red:         #C41515;
+            --red-deep:    #8B0000;
+            --red-vivid:   #E02020;
+            --bg:          #060000;
+            --bg-section:  #0E0000;
+            --card-bg:     #160000;
+            --text:        #FFF5E0;
+            --muted:       #9A8070;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.2; }
+        .kannada-text { font-family: 'Noto Sans Kannada', sans-serif; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        ul { list-style: none; }
+
+        .text-center  { text-align: center; }
+        .text-gold    { color: var(--gold); }
+        .text-red     { color: var(--red); }
+        .container    { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        .section-padding { padding: 6rem 0; }
+
+        /* ── Top stripe: red | gold ── */
+        .flag-bar { width: 100%; height: 8px; display: flex; position: fixed; top: 0; z-index: 200; }
+        .flag-bar .fb-r { flex: 1; background: var(--red); }
+        .flag-bar .fb-g { flex: 1; background: var(--gold); }
+
+        /* ── Navbar ── */
+        .navbar {
+            position: fixed; top: 8px; width: 100%;
+            padding: 1.4rem 0; z-index: 100;
+            transition: all 0.4s ease;
+            background: linear-gradient(to bottom, rgba(6,0,0,0.92) 0%, transparent 100%);
+        }
+        .navbar.scrolled {
+            background: rgba(6,0,0,0.97); backdrop-filter: blur(12px);
+            padding: 0.9rem 0;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.7);
+            border-bottom: 1px solid rgba(212,175,55,0.15);
+        }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo h3 { font-size: 1.15rem; color: var(--text); letter-spacing: 1px; }
+        .logo .kannada-text { color: var(--gold); margin-right: 8px; }
+
+        .nav-links { display: flex; gap: 2.5rem; }
+        .nav-links a {
+            font-size: 0.85rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1.5px;
+            transition: color 0.3s ease; position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; width: 0; height: 2px;
+            bottom: -4px; left: 0;
+            background: var(--gold); transition: width 0.3s ease;
+        }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-links a:hover { color: var(--gold); }
+        .mobile-menu-btn { display: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+
+        /* ── Buttons ── */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 0.9rem 2rem;
+            font-family: 'Montserrat', sans-serif; font-weight: 700;
+            font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px;
+            border-radius: 3px; transition: all 0.3s ease; cursor: pointer;
+        }
+        .btn-primary { background: var(--red); color: #fff; border: 2px solid var(--red); }
+        .btn-primary:hover { background: transparent; color: var(--gold); border-color: var(--gold); box-shadow: 0 0 18px rgba(212,175,55,0.3); }
+        .btn-gold   { background: var(--gold); color: var(--bg); border: 2px solid var(--gold); }
+        .btn-gold:hover { background: transparent; color: var(--gold); }
+        .btn-outline { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
+        .btn-outline:hover { background: var(--gold); color: var(--bg); }
+
+        /* ── Section Divider (red | gold) ── */
+        .rg-divider { width: 80px; height: 6px; display: flex; margin: 0 auto; border-radius: 3px; overflow: hidden; }
+        .rg-divider .d-r { flex: 1; background: var(--red); }
+        .rg-divider .d-g { flex: 1; background: var(--gold); }
+
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-title  { font-size: 2.5rem; margin-bottom: 1rem; }
+        .section-title.kannada-text { color: var(--gold); }
+
+        /* ── Hero ── */
+        .hero {
+            height: 100vh; position: relative;
+            display: flex; align-items: center; justify-content: center; overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background-image: url('assets/hero-bg.jpg');
+            background-size: cover; background-position: center top;
+            z-index: -2;
+        }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(160deg,
+                rgba(6,0,0,0.90) 0%,
+                rgba(139,0,0,0.55) 50%,
+                rgba(212,175,55,0.18) 100%);
+            z-index: -1;
+        }
+        .hero-content {
+            text-align: center; max-width: 960px; padding: 0 2rem;
+            opacity: 0; transform: translateY(30px);
+            animation: fadeUp 1.2s cubic-bezier(0.2,0.8,0.2,1) forwards 0.5s;
+        }
+        .hero-flag-img {
+            width: 120px;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            margin: 0 auto 1.5rem auto;
+            display: block;
+            border: 2px solid rgba(212,175,55,0.4);
+        }
+        .hero-eyebrow {
+            display: inline-block; font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;
+            color: var(--gold); border-bottom: 1px solid var(--gold);
+            padding-bottom: 0.5rem; margin-bottom: 1.5rem;
+        }
+        .hero-main-title {
+            font-size: 5rem; color: var(--text);
+            text-shadow: 0 4px 24px rgba(0,0,0,0.8); margin-bottom: 0.5rem;
+        }
+        .hero-sub-title { font-size: 2.8rem; color: var(--gold); margin-bottom: 1rem; }
+        .hero-venue {
+            font-family: 'Montserrat', sans-serif; font-weight: 800;
+            font-size: 3.6rem; letter-spacing: 6px; text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 40px rgba(212,175,55,0.6), 0 4px 24px rgba(0,0,0,0.9);
+            margin-bottom: 0.4rem; line-height: 1.1;
+        }
+        .hero-venue span { color: var(--gold); }
+        .hero-venue-sub {
+            font-family: 'Montserrat', sans-serif; font-weight: 500;
+            font-size: 1rem; letter-spacing: 8px; text-transform: uppercase;
+            color: rgba(212,175,55,0.75); margin-bottom: 1.8rem;
+        }
+        .hero-desc { font-size: 1.15rem; font-weight: 300; margin-bottom: 3rem; color: rgba(255,245,224,0.88); }
+
+        .hero-stripe {
+            position: absolute; bottom: 0; left: 0; width: 100%;
+            height: 6px; display: flex; z-index: 2;
+        }
+        .hero-stripe .hs-r { flex: 1; background: var(--red); }
+        .hero-stripe .hs-g { flex: 1; background: var(--gold); }
+
+        .scroll-indicator {
+            position: absolute; bottom: 20px; left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: var(--gold); font-size: 1.4rem; opacity: 0.75;
+        }
+
+        /* ── Video ── */
+        .video-section { background: var(--bg-section); }
+        .video-container {
+            max-width: 900px; margin: 0 auto; position: relative;
+            border-radius: 16px; overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.7);
+            border: 2px solid rgba(212,175,55,0.25);
+            height: 0; padding-bottom: 56.25%;
+        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+        /* ── About ── */
+        .about-section { background: var(--bg); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .about-content p { font-size: 1.05rem; margin-bottom: 1.8rem; line-height: 1.9; color: rgba(255,245,224,0.82); }
+        .about-content .kannada-text { font-size: 1.35rem; color: var(--gold); line-height: 1.7; }
+
+        .about-images { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .img-wrapper { border-radius: 10px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
+        .img-wrapper.large { grid-column: 1/-1; height: 260px; }
+        .img-wrapper.small { height: 190px; }
+        .img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+        .img-wrapper:hover img { transform: scale(1.07); }
+
+        /* ── Highlights ── */
+        .highlights-section { background: var(--bg-section); }
+        .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+
+        .highlight-card {
+            background: var(--card-bg); padding: 2.5rem 2rem;
+            border-radius: 12px; text-align: center;
+            border: 1px solid rgba(212,175,55,0.08);
+            transition: all 0.4s ease; position: relative; overflow: hidden;
+        }
+        .highlight-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
+            background: linear-gradient(90deg, var(--red) 50%, var(--gold) 50%);
+            transform: scaleX(0); transition: transform 0.4s ease; transform-origin: left;
+        }
+        .highlight-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(139,0,0,0.4); border-color: rgba(212,175,55,0.3); }
+        .highlight-card:hover::before { transform: scaleX(1); }
+
+        .highlight-icon { font-size: 2.2rem; color: var(--gold); margin-bottom: 1.2rem; }
+        .highlight-card h4.kannada-text { font-size: 1.2rem; margin-bottom: 0.4rem; color: var(--text); }
+        .highlight-card p { color: var(--muted); font-size: 0.88rem; margin-bottom: 1rem; }
+        .status-badge {
+            display: inline-block; padding: 3px 12px;
+            background: rgba(212,175,55,0.08); color: var(--gold);
+            border-radius: 20px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+            border: 1px solid rgba(212,175,55,0.25);
+        }
+
+        /* ── Schedule ── */
+        .schedule-section { background: var(--bg); }
+        .timeline-container { max-width: 800px; margin: 0 auto; position: relative; }
+        .timeline-container::before {
+            content: ''; position: absolute; left: 50%; transform: translateX(-50%);
+            width: 2px; height: 100%;
+            background: linear-gradient(to bottom, var(--red), var(--gold));
+            opacity: 0.35;
+        }
+        .timeline-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; position: relative; }
+        .timeline-item:nth-child(even) { flex-direction: row-reverse; }
+        .timeline-content {
+            width: 45%; background: var(--card-bg); padding: 1.8rem;
+            border-radius: 10px; border: 1px solid rgba(212,175,55,0.08);
+            transition: all 0.3s ease;
+        }
+        .timeline-content:hover { border-color: var(--gold); box-shadow: 0 8px 24px rgba(139,0,0,0.4); }
+        .timeline-dot {
+            position: absolute; left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+            width: 18px; height: 18px;
+            background: var(--red); border: 4px solid var(--bg);
+            border-radius: 50%; z-index: 2; transition: background 0.3s ease;
+        }
+        .timeline-item:hover .timeline-dot { background: var(--gold); }
+        .time-slot { color: var(--gold); font-weight: 700; font-family: 'Montserrat',sans-serif; margin-bottom: 0.5rem; }
+        .timeline-content h4 { color: var(--text); margin-bottom: 0.3rem; }
+        .timeline-content p  { font-size: 0.88rem; color: var(--muted); margin-top: 0.3rem; }
+
+        /* ── Gallery ── */
+        .gallery-section { background: var(--bg-section); }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 260px;
+            gap: 1rem; grid-auto-flow: dense;
+        }
+        .gallery-item { position: relative; border-radius: 8px; overflow: hidden; cursor: pointer; }
+        .gallery-item.wide { grid-column: span 2; }
+        .gallery-item.tall { grid-row: span 2; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+        .gallery-item::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(6,0,0,0.88), rgba(139,0,0,0.12), transparent);
+            opacity: 0; transition: opacity 0.35s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.07); }
+        .gallery-item:hover::after { opacity: 1; }
+        .gallery-caption {
+            position: absolute; bottom: 16px; left: 18px; z-index: 2;
+            opacity: 0; transform: translateY(8px); transition: all 0.35s ease;
+            font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 0.92rem;
+            color: var(--gold);
+        }
+        .gallery-item:hover .gallery-caption { opacity: 1; transform: translateY(0); }
+
+        /* ── Participate ── */
+        .community-section { background: var(--gold); color: var(--bg); text-align: center; }
+        .community-section .section-title.kannada-text { color: var(--red-deep); }
+        .community-section p { color: rgba(6,0,0,0.7); max-width: 620px; margin: 0 auto 3rem; }
+        .action-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+
+        /* ── Sponsors ── */
+        .sponsors-section { background: var(--bg); }
+        .sponsors-tier { margin-bottom: 4rem; text-align: center; }
+        .tier-title { font-size: 1.1rem; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2rem; }
+        .sponsors-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; align-items: center; }
+        .sponsor-logo {
+            width: 200px; height: 90px;
+            background: rgba(212,175,55,0.04);
+            border: 1px solid rgba(212,175,55,0.1);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            color: rgba(212,175,55,0.25); font-family: 'Montserrat',sans-serif; font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        .sponsor-logo:hover { background: rgba(212,175,55,0.1); color: var(--text); border-color: rgba(212,175,55,0.5); }
+
+        /* ── Footer ── */
+        .footer { background: var(--bg); padding: 0 0 2rem 0; }
+        .footer-stripe { width: 100%; height: 8px; display: flex; }
+        .footer-stripe .fs-r { flex: 1; background: var(--red); }
+        .footer-stripe .fs-g { flex: 1; background: var(--gold); }
+        .footer-inner { padding: 4rem 0 2rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-brand h2 { margin-bottom: 0.8rem; }
+        .footer-brand p  { color: var(--muted); margin-bottom: 0.4rem; font-size: 0.9rem; }
+        .contact-info li { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; color: #ccc; font-size: 0.92rem; }
+        .contact-info i  { color: var(--gold); font-size: 1.1rem; width: 20px; }
+        .contact-info a:hover { color: var(--gold); }
+        .social-links { display: flex; gap: 0.8rem; margin-top: 1.5rem; }
+        .social-links a {
+            width: 38px; height: 38px; border-radius: 50%;
+            background: rgba(212,175,55,0.08);
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover { background: var(--red); transform: translateY(-3px); }
+        .map-placeholder {
+            width: 100%; height: 180px;
+            background: rgba(212,175,55,0.03);
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            color: #444; border: 1px dashed rgba(212,175,55,0.15); text-align: center; font-size: 0.85rem;
+        }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(212,175,55,0.08); }
+        .footer-tagline { font-size: 1.6rem; color: var(--gold); margin-bottom: 0.5rem; }
+
+        /* ── WhatsApp FAB ── */
+        .fab-whatsapp {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 58px; height: 58px; background: #25D366; color: #fff;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem; z-index: 99;
+            box-shadow: 0 4px 18px rgba(37,211,102,0.45);
+            transition: transform 0.3s ease;
+        }
+        .fab-whatsapp:hover { transform: scale(1.1); }
+
+        /* ── Animations ── */
+        .reveal { opacity: 0; transform: translateY(36px); transition: all 0.8s cubic-bezier(0.5,0,0,1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        @keyframes fadeUp   { to { opacity: 1; transform: translateY(0); } }
+        @keyframes kenburns { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
+        @keyframes bounce {
+            0%,20%,50%,80%,100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-18px) translateX(-50%); }
+            60% { transform: translateY(-9px)  translateX(-50%); }
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 992px) {
+            .hero-main-title { font-size: 3.5rem; }
+            .hero-sub-title  { font-size: 2rem; }
+            .about-grid { grid-template-columns: 1fr; }
+            .timeline-container::before { left: 38px; }
+            .timeline-item, .timeline-item:nth-child(even) { flex-direction: column; align-items: flex-start; padding-left: 70px; }
+            .timeline-content { width: 100%; }
+            .timeline-dot { left: 38px; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-item.wide { grid-column: span 2; }
+            .gallery-item.tall { grid-row: span 1; }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed; top: 0; right: -100%;
+                width: 70%; height: 100vh;
+                background: rgba(6,0,0,0.98); backdrop-filter: blur(12px);
+                flex-direction: column; justify-content: center; align-items: center;
+                transition: right 0.4s ease;
+            }
+            .nav-links.active { right: 0; box-shadow: -10px 0 30px rgba(0,0,0,0.6); }
+            .mobile-menu-btn { display: block; z-index: 101; }
+            .hero-main-title { font-size: 2.6rem; }
+            .hero-sub-title  { font-size: 1.6rem; }
+            .hero-venue { font-size: 2.2rem; letter-spacing: 3px; }
+            .section-padding { padding: 4rem 0; }
+            .section-title   { font-size: 2rem; }
+            .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+            .gallery-item.wide, .gallery-item.tall { grid-column: span 1; grid-row: span 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+            .hero-bg { animation: none; }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-<div class="flag">🚩</div>
-<h1 class="kn">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026</h1>
-<h1>KANNADA RAJYOTSAVA</h1>
-<span>1 NOVEMBER 2026 • SUNDAY • 70 YEARS OF KARNATAKA</span>
-<p>ಸಿರಿಗನ್ನಡಂ ಗೆಲ್ಗೆ • ಸಿರಿಗನ್ನಡಂ ಬಾಳ್ಗೆ</p>
-<div class="badge">✨ ನಮ್ಮ ಕರ್ನಾಟಕ • ನಮ್ಮ ಹೆಮ್ಮೆ ✨</div>
-</header>
+    <!-- Red | Gold stripe bar -->
+    <div class="flag-bar" aria-hidden="true">
+        <div class="fb-r"></div>
+        <div class="fb-g"></div>
+    </div>
 
-<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" style="display:flex;align-items:center;gap:10px;">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Karnataka.svg"
+                     alt="Karnataka Flag" style="width:36px;height:auto;border-radius:2px;border:1px solid rgba(212,175,55,0.3);">
+                <h3><span class="kannada-text">ಕರ್ನಾಟಕ</span> PRIDE</h3>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#participate">Participate</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
 
-<div class="card">
-<h2>🎵 Naada Geethe - ನಾಡಗೀತೆ</h2>
-<p>Tap play and sing along with Karnataka's State Anthem by Kuvempu.</p>
-<audio controls>
-<source src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Jaya_Bharata_Jananiya_Tanujate.ogg" type="audio/ogg">
-Your browser does not support audio.
-</audio>
-<div class="lyrics kn">
-ಜಯ ಭಾರತ ಜನನಿಯ ತನುಜಾತೆ<br>
-ಜಯ ಹೇ ಕರ್ನಾಟಕ ಮಾತೆ<br>
-ಜಯ ಸುಂದರ ನದಿ ವನಗಳ ನಾಡೆ<br>
-ಜಯ ಹೇ ರಸಋಷಿಗಳ ಬೀಡೆ
-</div>
-<button class="btn btn-yellow" onclick="window.open('https://www.youtube.com/results?search_query=Jaya+Bharata+Jananiya+Tanujate+Kannada+Naada+Geethe','_blank')">▶️ Watch Naada Geethe on YouTube</button>
-</div>
+    <!-- Hero — background: Mysore Palace -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Karnataka Rajyotsava Flag -->
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Karnataka.svg"
+                alt="Karnataka Flag — ಕರ್ನಾಟಕ ಧ್ವಜ"
+                class="hero-flag-img"
+                loading="eager"
+            >
+            <div class="hero-eyebrow">28 November 2026 &nbsp;•&nbsp; Bengaluru</div>
+            <h1 class="hero-main-title kannada-text">ಕನ್ನಡವೇ ನಮ್ಮ ಉಸಿರು</h1>
+            <h2 class="hero-sub-title">KANNADA IS OUR PRIDE</h2>
+            <div class="hero-venue">PURVA <span>ZENIUM</span></div>
+            <div class="hero-venue-sub">Kannada Rajyotsava 2026</div>
+            <p class="hero-desc">Celebrating the Spirit, Heritage & Glory of Karnataka</p>
+            <div class="action-buttons" style="justify-content:center;">
+                <a href="#participate" class="btn btn-primary">Join the Celebration</a>
+                <a href="#video" class="btn btn-outline">Watch Trailer</a>
+            </div>
+        </div>
+        <div class="hero-stripe" aria-hidden="true">
+            <div class="hs-r"></div>
+            <div class="hs-g"></div>
+        </div>
+        <a href="#video" class="scroll-indicator" aria-label="Scroll Down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
 
-<div class="card">
-<h2>🙏 ನಮ್ಮ ಕರ್ನಾಟಕಕ್ಕೆ ನಮನ</h2>
-<p class="kn">ಕನ್ನಡ ನಾಡು, ಕನ್ನಡ ಭಾಷೆ, ಕನ್ನಡ ಸಂಸ್ಕೃತಿ — ಇದು ನಮ್ಮ ಹೆಮ್ಮೆ, ನಮ್ಮ ಗುರುತು. 1956ರ ನವೆಂಬರ್ 1 ರಂದು ಕನ್ನಡ ಮಾತನಾಡುವ ಎಲ್ಲಾ ಪ್ರದೇಶಗಳು ಒಂದಾಗಿ ಕರ್ನಾಟಕ ಉದಯವಾಯಿತು.</p>
-<p style="margin-top:10px">On 1st November 1956, all Kannada-speaking regions united to form Karnataka. Today we celebrate our language, culture, food, art and people.</p>
-<div class="history-grid">
-<div><b>1956</b>State Formed</div>
-<div><b>1973</b>Mysore → Karnataka</div>
-<div><b>1 Nov</b>Rajyotsava Day</div>
-<div><b>6.5 Cr+</b>Kannadigas</div>
-</div>
-</div>
+    <!-- Video -->
+    <section id="video" class="video-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Experience the Spirit of Karnataka</h2>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
+            </div>
+            <div class="video-container reveal">
+                <iframe
+                    src="https://www.youtube.com/embed/m2pLKwlops4?si=JU2OzlsercXRAN_A"
+                    title="Kannada Rajyotsava 2026 Official Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h2>📸 Namma Karnataka Gallery</h2>
-<p>Tap any photo to view. Bengaluru • Mysuru • Hampi • Coorg</p>
-<div class="gallery">
-<figure><img src="assets/temple-gopuram-sunset.jpg" alt="Temple Gopura"><figcaption>📍 Ancient Temple Gopura</figcaption></figure>
-<figure><img src="assets/belur-temple.jpg" alt="Belur Temple"><figcaption>📍 Belur Chennakeshava</figcaption></figure>
-<figure><img src="assets/hampi-stone-chariot.jpg" alt="Hampi"><figcaption>📍 Hampi Stone Chariot</figcaption></figure>
-<figure><img src="assets/somnathpur-temple.jpg" alt="Somnathpur"><figcaption>📍 Somnathpur Temple</figcaption></figure>
-</div>
-</div>
+    <!-- About -->
+    <section id="about" class="about-section section-padding">
+        <div class="container about-grid">
+            <div class="about-content reveal">
+                <div class="section-header" style="text-align:left; margin-bottom:2rem;">
+                    <h2 class="section-title kannada-text">ನಮ್ಮ ನಾಡು, ನಮ್ಮ ಹೆಮ್ಮೆ</h2>
+                    <div class="rg-divider" style="margin:0.8rem 0 0 0;"><div class="d-r"></div><div class="d-g"></div></div>
+                </div>
+                <p class="kannada-text">ಕರ್ನಾಟಕದ ಏಕೀಕರಣ, ಕನ್ನಡ ಭಾಷೆಯ ವೈಭವ ಮತ್ತು ನಮ್ಮ ನಾಡಿನ ಸಂಸ್ಕೃತಿ, ಪರಂಪರೆ ಹಾಗೂ ಹೆಮ್ಮೆಯನ್ನು ಆಚರಿಸುವ ಮಹೋತ್ಸವವೇ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ.</p>
+                <p>Karnataka Rajyotsava celebrates the formation of Karnataka, the richness of the Kannada language, and the extraordinary cultural heritage of our beloved state. From the grandeur of Hampi to the splendour of Mysore — join us in honouring our roots.</p>
+                <a href="#schedule" class="btn btn-gold" style="margin-top:0.5rem;">View Program</a>
+            </div>
+            <div class="about-images reveal">
+                <div class="img-wrapper large" style="height:420px;background:#000;border-radius:16px;box-shadow:0 16px 48px rgba(212,175,55,0.25);">
+                    <img src="assets/karnataka-map.jpg" alt="Karnataka — ಕರ್ನಾಟಕ ನಕ್ಷೆ" loading="lazy" style="object-fit:contain;background:#000;">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h2>💛❤️ Famous Quotes</h2>
-<div class="quote">"ಜಯ ಭಾರತ ಜನನಿಯ ತನುಜಾತೆ, ಜಯ ಹೇ ಕರ್ನಾಟಕ ಮಾತೆ" — Kuvempu</div>
-<div class="quote">"ಸಿರಿಗನ್ನಡಂ ಗೆಲ್ಗೆ, ಸಿರಿಗನ್ನಡಂ ಬಾಳ್ಗೆ"</div>
-<div class="quote">"Kannada is not just a language, it is our emotion."</div>
-</div>
+    <!-- Highlights -->
+    <section id="highlights" class="highlights-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Event Highlights</h2>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card reveal">
+                    <i class="fas fa-mask highlight-icon"></i>
+                    <h4 class="kannada-text">ಕನ್ನಡ ಸಾಂಸ್ಕೃತಿಕ ಕಾರ್ಯಕ್ರಮಗಳು</h4>
+                    <p>Kannada Cultural Performances</p>
+                    <span class="status-badge">Coming Soon</span>
+                </div>
+                <div class="highlight-card reveal">
+                    <i class="fas fa-landmark highlight-icon"></i>
+                    <h4 class="kannada-text">ಕನ್ನಡ ನಾಡು-ನುಡಿ ವೈಭವ</h4>
+                    <p>Karnataka Heritage Showcase</p>
+                    <span class="status-badge">Highlights</span>
+                </div>
+                <div class="highlight-card reveal">
+                    <i class="fas fa-drum highlight-icon"></i>
+                    <h4 class="kannada-text">ಸಂಗೀತ ಮತ್ತು ನೃತ್ಯ</h4>
+                    <p>Music & Dance</p>
+                    <span class="status-badge">Coming Soon</span>
+                </div>
+                <div class="highlight-card reveal">
+                    <i class="fas fa-child highlight-icon"></i>
+                    <h4 class="kannada-text">ಮಕ್ಕಳ ಪ್ರತಿಭಾ ಪ್ರದರ್ಶನ</h4>
+                    <p>Kids' Talent Showcase</p>
+                    <span class="status-badge">Register Now</span>
+                </div>
+                <div class="highlight-card reveal">
+                    <i class="fas fa-users highlight-icon"></i>
+                    <h4 class="kannada-text">ಸಮುದಾಯ ಸಂಭ್ರಮ</h4>
+                    <p>Community Celebration</p>
+                    <span class="status-badge">Highlights</span>
+                </div>
+                <div class="highlight-card reveal">
+                    <i class="fas fa-utensils highlight-icon"></i>
+                    <h4 class="kannada-text">ರುಚಿಕರ ಕರ್ನಾಟಕ ಆಹಾರ</h4>
+                    <p>Authentic Karnataka Cuisine</p>
+                    <span class="status-badge">Menu TBA</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h2>🎨 Create Your Wish Card</h2>
-<p>Type your name and create a beautiful Rajyotsava wish to share!</p>
-<input id="nameInput" placeholder="Enter your name... e.g. Manu" />
-<button class="btn" onclick="makeCard()">✨ Make My Wish Card</button>
-<div id="wishCard">
-<h3 class="kn">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಶುಭಾಶಯಗಳು!</h3>
-<p id="wishText"></p>
-<p style="font-size:13px;opacity:.9">From ❤️ Karnataka</p>
-</div>
-<button class="btn btn-green" onclick="shareWhatsApp()">📲 Share on WhatsApp</button>
-</div>
+    <!-- Schedule -->
+    <section id="schedule" class="schedule-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title kannada-text">ನಮ್ಮ ಸಂಭ್ರಮದ ಕಾರ್ಯಕ್ರಮಗಳು</h2>
+                <p style="color:var(--gold);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:3px;margin-bottom:1rem;">Celebration Schedule</p>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="time-slot">09:00 AM</div>
+                        <h4 class="kannada-text">ಧ್ವಜಾರೋಹಣ ಮತ್ತು ಉದ್ಘಾಟನೆ</h4>
+                        <p>Flag Hoisting & Inauguration Ceremony</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="time-slot">10:30 AM</div>
+                        <h4 class="kannada-text">ಮಕ್ಕಳ ಚಟುವಟಿಕೆಗಳು</h4>
+                        <p>Kids' Cultural Activities & Competitions (TBC)</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="time-slot">04:00 PM</div>
+                        <h4 class="kannada-text">ಸಮುದಾಯ ಸಂಭ್ರಮ</h4>
+                        <p>Community Gathering & High Tea</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="time-slot">05:30 PM</div>
+                        <h4 class="kannada-text">ಸಾಂಸ್ಕೃತಿಕ, ಸಂಗೀತ ಮತ್ತು ನೃತ್ಯ</h4>
+                        <p>Cultural Performances, Music & Traditional Dance</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="time-slot">08:00 PM</div>
+                        <h4 class="kannada-text">ರಾತ್ರಿ ಭೋಜನ</h4>
+                        <p>Authentic Karnataka Dinner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top:3rem;">
+                <p style="color:#444;font-style:italic;font-size:0.9rem;">* Schedule subject to final confirmation.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="card">
-<h2>⏳ Countdown to Rajyotsava 2027</h2>
-<p style="text-align:center">Next celebration: <b>1 November 2027, Monday</b></p>
-<div class="countdown">
-<div><b id="d">0</b><span>DAYS</span></div>
-<div><b id="h">0</b><span>HOURS</span></div>
-<div><b id="m">0</b><span>MINS</span></div>
-<div><b id="s">0</b><span>SECS</span></div>
-</div>
-<p style="text-align:center;margin-top:10px;font-size:13px">Save this page and come back next year!</p>
-</div>
+    <!-- Gallery — Famous Ancient Places of Karnataka -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title kannada-text">ಕರ್ನಾಟಕದ ಪ್ರಾಚೀನ ವೈಭವ</h2>
+                <p style="color:rgba(255,245,224,0.5);margin-bottom:1rem;">Ancient Wonders of Karnataka</p>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
+            </div>
+            <div class="gallery-grid">
 
-<div class="card">
-<h2>🎉 How to Celebrate?</h2>
-<p>✅ Hoist Kannada Flag<br>✅ Sing Naada Geethe<br>✅ Wear Yellow-Red<br>✅ Eat Benne Dose, Maddur Vade<br>✅ Share this page with friends</p>
-</div>
+                <!-- 1. Hampi Stone Chariot — Vittala Temple, UNESCO World Heritage -->
+                <div class="gallery-item wide reveal">
+                    <img src="assets/hampi-stone-chariot.jpg" alt="Hampi Stone Chariot — Vittala Temple" loading="lazy">
+                    <div class="gallery-caption">ಹಂಪಿ ಕಲ್ಲಿನ ರಥ — Hampi Stone Chariot</div>
+                </div>
 
-</div>
+                <!-- 2. Temple Gopura at Sunset — ancient Karnataka architecture -->
+                <div class="gallery-item tall reveal">
+                    <img src="assets/temple-gopuram-sunset.jpg" alt="Ancient Temple Gopura at Sunset" loading="lazy">
+                    <div class="gallery-caption">ಗೋಪುರ — Ancient Temple Gopura</div>
+                </div>
 
-<footer>
-Made with ❤️ in Karnataka | By Manu Ramamurthy<br>
-#KannadaRajyotsava2026 #NammaKarnataka
-</footer>
+                <!-- 3. Belur Chennakeshava Temple — Hoysala masterpiece -->
+                <div class="gallery-item reveal">
+                    <img src="assets/belur-temple.jpg" alt="Belur Chennakeshava Temple" loading="lazy">
+                    <div class="gallery-caption">ಬೇಲೂರು ಚೆನ್ನಕೇಶವ — Belur Temple</div>
+                </div>
 
-<script>
-function makeCard(){
-  let name = document.getElementById('nameInput').value.trim() || 'Namma Kannadiga';
-  document.getElementById('wishCard').style.display='block';
-  document.getElementById('wishText').innerHTML = `Dear <b>${name}</b>,<br>ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಹಾರ್ದಿಕ ಶುಭಾಶಯಗಳು!<br>Happy Kannada Rajyotsava 2026!`;
-  document.getElementById('wishCard').scrollIntoView({behavior:'smooth'});
-}
-function shareWhatsApp(){
-  let name = document.getElementById('nameInput').value.trim() || 'Namma Kannadiga';
-  let text = `ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವದ ಶುಭಾಶಯಗಳು! 🙏💛❤️\nHappy Kannada Rajyotsava 2026 from ${name}\n\nCheck this beautiful page: https://mmanuramamurthy.github.io/kannada-rajyotsava-2026/`;
-  window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank');
-}
-// Countdown
-function updateCountdown(){
-  let target = new Date('2027-11-01T00:00:00+05:30').getTime();
-  let now = new Date().getTime();
-  let diff = target - now;
-  if(diff<0) diff=0;
-  document.getElementById('d').innerText = Math.floor(diff/(1000*60*60*24));
-  document.getElementById('h').innerText = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-  document.getElementById('m').innerText = Math.floor((diff%(1000*60*60))/(1000*60));
-  document.getElementById('s').innerText = Math.floor((diff%(1000*60))/1000);
-}
-setInterval(updateCountdown,1000); updateCountdown();
-// Confetti
-for(let i=0;i<30;i++){
-  let s=document.createElement('div');
-  s.style.cssText=`position:fixed;top:-10px;left:${Math.random()*100}vw;width:8px;height:12px;background:${Math.random()>0.5?'#FFD600':'#D32F2F'};z-index:999;animation:fall ${3+Math.random()*3}s linear infinite;opacity:.8;pointer-events:none`;
-  document.body.appendChild(s);
-}
-let st=document.createElement('style'); st.innerHTML='@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}'; document.head.appendChild(st);
-</script>
+                <!-- 4. Somnathpur Keshava Temple — Hoysala gem -->
+                <div class="gallery-item reveal">
+                    <img src="assets/somnathpur-temple.jpg" alt="Somnathpur Keshava Temple" loading="lazy">
+                    <div class="gallery-caption">ಸೋಮನಾಥಪುರ — Keshava Temple</div>
+                </div>
+
+                <!-- 5. Sringeri Ancient Temple — Karnataka heritage -->
+                <div class="gallery-item wide reveal">
+                    <img src="assets/sringeri-temple.jpg" alt="Sringeri Ancient Temple" loading="lazy">
+                    <div class="gallery-caption">ಶೃಂಗೇರಿ — Ancient Temple</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Participate -->
+    <section id="participate" class="community-section section-padding">
+        <div class="container reveal">
+            <div class="rg-divider" style="margin-bottom:2rem;"><div class="d-r"></div><div class="d-g"></div></div>
+            <h2 class="section-title kannada-text" style="margin-bottom:0.5rem;">ಒಗ್ಗಟ್ಟಿನಲ್ಲಿ ನಮ್ಮ ಕನ್ನಡದ ಸಂಭ್ರಮ</h2>
+            <h3 style="font-size:1.4rem;margin-bottom:1.5rem;">Together, We Celebrate the Pride of Karnataka</h3>
+            <p>Purva Zenium residents — your participation makes this special. Perform, organise, or simply join us for the grand feast.</p>
+            <div class="action-buttons">
+                <a href="#contact" class="btn btn-primary">Register Your Family</a>
+                <a href="#contact" class="btn btn-gold" style="background:var(--red-deep);color:var(--gold);border-color:var(--red-deep);">Participate in Events</a>
+                <a href="#contact" class="btn btn-outline" style="border-color:var(--red-deep);color:var(--red-deep);">Volunteer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="sponsors-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title kannada-text">ನಮ್ಮ ಸಂಭ್ರಮದ ಸಹಯೋಗಿಗಳು</h2>
+                <p style="color:var(--gold);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;">Our Valued Sponsors</p>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
+            </div>
+            <div class="sponsors-tier reveal">
+                <h4 class="tier-title">Platinum Sponsors</h4>
+                <div class="sponsors-grid">
+                    <div class="sponsor-logo">LOGO PLACEHOLDER</div>
+                </div>
+            </div>
+            <div class="sponsors-tier reveal">
+                <h4 class="tier-title">Gold & Silver Sponsors</h4>
+                <div class="sponsors-grid">
+                    <div class="sponsor-logo" style="width:160px;height:80px;">LOGO</div>
+                    <div class="sponsor-logo" style="width:160px;height:80px;">LOGO</div>
+                    <div class="sponsor-logo" style="width:160px;height:80px;">LOGO</div>
+                </div>
+            </div>
+            <div class="text-center reveal" style="margin-top:3rem;">
+                <a href="#contact" class="btn btn-outline">Become a Sponsor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-stripe" aria-hidden="true">
+            <div class="fs-r"></div>
+            <div class="fs-g"></div>
+        </div>
+        <div class="container footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2 class="kannada-text text-gold">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026</h2>
+                    <h3 style="margin-bottom:1rem;">KANNADA RAJYOTSAVA</h3>
+                    <p>Purva Zenium, Bengaluru</p>
+                    <p>Event Date: 28 November 2026</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:1.5rem;color:var(--gold);">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-user"></i><span>Event Coordinator: <strong>Manu</strong></span></li>
+                        <li><i class="fas fa-phone-alt"></i><a href="tel:+919742992465">+91 97429 92465</a></li>
+                        <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/919742992465" target="_blank" rel="noopener">WhatsApp Message</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:1.5rem;color:var(--gold);">Venue</h4>
+                    <div class="map-placeholder">
+                        <p>
+                            <i class="fas fa-map-marker-alt" style="color:var(--red);font-size:1.4rem;display:block;margin-bottom:0.5rem;"></i>
+                            Google Maps Integration Placeholder<br>
+                            <span style="color:#333;">(Purva Zenium, Bengaluru)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <h3 class="footer-tagline kannada-text">ಜೈ ಕರ್ನಾಟಕ! ಜೈ ಕನ್ನಡ!</h3>
+                <p style="color:#333;font-size:0.85rem;">Celebrating the Pride of Karnataka. Designed for Purva Zenium.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919742992465" class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
+
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks      = document.getElementById('navLinks');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars',  !navLinks.classList.contains('active'));
+            icon.classList.toggle('fa-times',  navLinks.classList.contains('active'));
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            mobileMenuBtn.querySelector('i').classList.replace('fa-times','fa-bars');
+        }));
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); obs.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
