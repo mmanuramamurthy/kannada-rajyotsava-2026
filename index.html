@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kannada Rajyotsava 2026 | Purva Zenium</title>
     <meta name="description" content="Join us in celebrating Kannada Rajyotsava 2026 at Purva Zenium, Bengaluru. Celebrating the Spirit, Heritage & Glory of Karnataka.">
-
     <meta property="og:title" content="Kannada Rajyotsava 2026 | Purva Zenium">
     <meta property="og:description" content="Experience a premium cultural celebration of Karnataka's heritage. Namma Karnataka – Namma Hemme.">
     <meta property="og:type" content="website">
@@ -16,16 +15,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+        /* ── Red & Gold Palette ── */
         :root {
-            --flag-yellow: #F7C300;
-            --flag-red:    #CC1A1A;
-            --kr-red:      #CC1A1A;
-            --kr-yellow:   #F7C300;
-            --deep-black:  #0A0A0A;
-            --dark-gray:   #141414;
-            --card-bg:     #1C1C1C;
-            --warm-ivory:  #FFFBF0;
-            --muted:       #999;
+            --gold:        #D4AF37;
+            --gold-light:  #E8C84A;
+            --gold-dim:    #A8862A;
+            --red:         #C41515;
+            --red-deep:    #8B0000;
+            --red-vivid:   #E02020;
+            --bg:          #060000;
+            --bg-section:  #0E0000;
+            --card-bg:     #160000;
+            --text:        #FFF5E0;
+            --muted:       #9A8070;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -33,8 +35,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--deep-black);
-            color: var(--warm-ivory);
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -46,44 +48,32 @@
         ul { list-style: none; }
 
         .text-center  { text-align: center; }
-        .text-yellow  { color: var(--flag-yellow); }
-        .text-red     { color: var(--flag-red); }
-
-        .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        .text-gold    { color: var(--gold); }
+        .text-red     { color: var(--red); }
+        .container    { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
         .section-padding { padding: 6rem 0; }
 
-        /* ── Flag Bar ── */
-        .flag-bar {
-            width: 100%;
-            height: 8px;
-            display: flex;
-            position: fixed;
-            top: 0;
-            z-index: 200;
-        }
-        .flag-bar .fb-yellow { flex: 1; background: var(--flag-yellow); }
-        .flag-bar .fb-red    { flex: 1; background: var(--flag-red); }
+        /* ── Top stripe: red | gold ── */
+        .flag-bar { width: 100%; height: 8px; display: flex; position: fixed; top: 0; z-index: 200; }
+        .flag-bar .fb-r { flex: 1; background: var(--red); }
+        .flag-bar .fb-g { flex: 1; background: var(--gold); }
 
         /* ── Navbar ── */
         .navbar {
-            position: fixed;
-            top: 8px;
-            width: 100%;
-            padding: 1.4rem 0;
-            z-index: 100;
+            position: fixed; top: 8px; width: 100%;
+            padding: 1.4rem 0; z-index: 100;
             transition: all 0.4s ease;
-            background: linear-gradient(to bottom, rgba(10,10,10,0.92) 0%, transparent 100%);
+            background: linear-gradient(to bottom, rgba(6,0,0,0.92) 0%, transparent 100%);
         }
         .navbar.scrolled {
-            background: rgba(10,10,10,0.97);
-            backdrop-filter: blur(12px);
+            background: rgba(6,0,0,0.97); backdrop-filter: blur(12px);
             padding: 0.9rem 0;
-            box-shadow: 0 4px 30px rgba(0,0,0,0.6);
-            border-bottom: 1px solid rgba(247,195,0,0.15);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.7);
+            border-bottom: 1px solid rgba(212,175,55,0.15);
         }
         .nav-container { display: flex; justify-content: space-between; align-items: center; }
-        .logo h3 { font-size: 1.15rem; color: var(--warm-ivory); letter-spacing: 1px; }
-        .logo .kannada-text { color: var(--flag-yellow); margin-right: 8px; }
+        .logo h3 { font-size: 1.15rem; color: var(--text); letter-spacing: 1px; }
+        .logo .kannada-text { color: var(--gold); margin-right: 8px; }
 
         .nav-links { display: flex; gap: 2.5rem; }
         .nav-links a {
@@ -94,12 +84,11 @@
         .nav-links a::after {
             content: ''; position: absolute; width: 0; height: 2px;
             bottom: -4px; left: 0;
-            background: var(--flag-yellow); transition: width 0.3s ease;
+            background: var(--gold); transition: width 0.3s ease;
         }
         .nav-links a:hover::after { width: 100%; }
-        .nav-links a:hover { color: var(--flag-yellow); }
-
-        .mobile-menu-btn { display: none; color: var(--warm-ivory); font-size: 1.5rem; cursor: pointer; }
+        .nav-links a:hover { color: var(--gold); }
+        .mobile-menu-btn { display: none; color: var(--text); font-size: 1.5rem; cursor: pointer; }
 
         /* ── Buttons ── */
         .btn {
@@ -107,48 +96,42 @@
             padding: 0.9rem 2rem;
             font-family: 'Montserrat', sans-serif; font-weight: 700;
             font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px;
-            border-radius: 3px;
-            transition: all 0.3s ease; cursor: pointer;
+            border-radius: 3px; transition: all 0.3s ease; cursor: pointer;
         }
-        .btn-primary  { background: var(--flag-red);    color: #fff;              border: 2px solid var(--flag-red);    }
-        .btn-primary:hover { background: transparent; color: var(--flag-yellow); border-color: var(--flag-yellow); box-shadow: 0 0 18px rgba(247,195,0,0.3); }
-        .btn-yellow   { background: var(--flag-yellow); color: var(--deep-black); border: 2px solid var(--flag-yellow); }
-        .btn-yellow:hover { background: transparent; color: var(--flag-yellow); }
-        .btn-outline  { background: transparent;        color: var(--flag-yellow); border: 2px solid var(--flag-yellow); }
-        .btn-outline:hover { background: var(--flag-yellow); color: var(--deep-black); }
+        .btn-primary { background: var(--red); color: #fff; border: 2px solid var(--red); }
+        .btn-primary:hover { background: transparent; color: var(--gold); border-color: var(--gold); box-shadow: 0 0 18px rgba(212,175,55,0.3); }
+        .btn-gold   { background: var(--gold); color: var(--bg); border: 2px solid var(--gold); }
+        .btn-gold:hover { background: transparent; color: var(--gold); }
+        .btn-outline { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
+        .btn-outline:hover { background: var(--gold); color: var(--bg); }
 
-        /* ── Section Headers ── */
+        /* ── Section Divider (red | gold) ── */
+        .rg-divider { width: 80px; height: 6px; display: flex; margin: 0 auto; border-radius: 3px; overflow: hidden; }
+        .rg-divider .d-r { flex: 1; background: var(--red); }
+        .rg-divider .d-g { flex: 1; background: var(--gold); }
+
         .section-header { text-align: center; margin-bottom: 4rem; }
         .section-title  { font-size: 2.5rem; margin-bottom: 1rem; }
-        .section-title.kannada-text { color: var(--flag-yellow); }
-
-        .flag-divider {
-            width: 80px; height: 6px;
-            display: flex; margin: 0 auto;
-            border-radius: 3px; overflow: hidden;
-        }
-        .flag-divider .fd-y { flex: 1; background: var(--flag-yellow); }
-        .flag-divider .fd-r { flex: 1; background: var(--flag-red); }
+        .section-title.kannada-text { color: var(--gold); }
 
         /* ── Hero ── */
         .hero {
             height: 100vh; position: relative;
-            display: flex; align-items: center; justify-content: center;
-            overflow: hidden;
+            display: flex; align-items: center; justify-content: center; overflow: hidden;
         }
+        /* Hampi Virupaksha Temple ruins — ancient Karnataka */
         .hero-bg {
             position: absolute; inset: 0;
-            background-image: url('https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=90&w=2400&auto=format&fit=crop');
+            background-image: url('https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=2400&auto=format&fit=crop');
             background-size: cover; background-position: center;
-            z-index: -2;
-            animation: kenburns 20s infinite alternate ease-in-out;
+            z-index: -2; animation: kenburns 22s infinite alternate ease-in-out;
         }
         .hero-overlay {
             position: absolute; inset: 0;
             background: linear-gradient(160deg,
-                rgba(10,10,10,0.88) 0%,
-                rgba(204,26,26,0.45) 50%,
-                rgba(247,195,0,0.25) 100%);
+                rgba(6,0,0,0.90) 0%,
+                rgba(139,0,0,0.55) 50%,
+                rgba(212,175,55,0.18) 100%);
             z-index: -1;
         }
         .hero-content {
@@ -157,133 +140,115 @@
             animation: fadeUp 1.2s cubic-bezier(0.2,0.8,0.2,1) forwards 0.5s;
         }
         .hero-eyebrow {
-            display: inline-block;
-            font-family: 'Montserrat', sans-serif; font-size: 0.85rem;
-            letter-spacing: 4px; text-transform: uppercase;
-            color: var(--flag-yellow);
-            border-bottom: 1px solid var(--flag-yellow);
+            display: inline-block; font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem; letter-spacing: 4px; text-transform: uppercase;
+            color: var(--gold); border-bottom: 1px solid var(--gold);
             padding-bottom: 0.5rem; margin-bottom: 1.5rem;
         }
         .hero-main-title {
-            font-size: 5rem; color: var(--warm-ivory);
-            text-shadow: 0 4px 24px rgba(0,0,0,0.6); margin-bottom: 0.5rem;
+            font-size: 5rem; color: var(--text);
+            text-shadow: 0 4px 24px rgba(0,0,0,0.8); margin-bottom: 0.5rem;
         }
-        .hero-sub-title { font-size: 2.8rem; color: var(--flag-yellow); margin-bottom: 1.5rem; }
-        .hero-desc { font-size: 1.15rem; font-weight: 300; margin-bottom: 3rem; color: rgba(255,251,240,0.88); }
+        .hero-sub-title { font-size: 2.8rem; color: var(--gold); margin-bottom: 1.5rem; }
+        .hero-desc { font-size: 1.15rem; font-weight: 300; margin-bottom: 3rem; color: rgba(255,245,224,0.88); }
 
-        /* Flag stripe on hero bottom */
-        .hero-flag-stripe {
+        .hero-stripe {
             position: absolute; bottom: 0; left: 0; width: 100%;
             height: 6px; display: flex; z-index: 2;
         }
-        .hero-flag-stripe .hfs-y { flex: 1; background: var(--flag-yellow); }
-        .hero-flag-stripe .hfs-r { flex: 1; background: var(--flag-red); }
+        .hero-stripe .hs-r { flex: 1; background: var(--red); }
+        .hero-stripe .hs-g { flex: 1; background: var(--gold); }
 
         .scroll-indicator {
             position: absolute; bottom: 20px; left: 50%;
             transform: translateX(-50%);
             animation: bounce 2s infinite;
-            color: var(--warm-ivory); font-size: 1.4rem; opacity: 0.7;
+            color: var(--gold); font-size: 1.4rem; opacity: 0.75;
         }
 
-        /* ── Video Section ── */
-        .video-section { background: var(--dark-gray); }
+        /* ── Video ── */
+        .video-section { background: var(--bg-section); }
         .video-container {
             max-width: 900px; margin: 0 auto; position: relative;
             border-radius: 16px; overflow: hidden;
-            box-shadow: 0 24px 60px rgba(0,0,0,0.6);
-            border: 2px solid rgba(247,195,0,0.2);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.7);
+            border: 2px solid rgba(212,175,55,0.25);
             height: 0; padding-bottom: 56.25%;
         }
-        .video-container iframe {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
         /* ── About ── */
-        .about-section { background: var(--deep-black); }
+        .about-section { background: var(--bg); }
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-        .about-content p { font-size: 1.05rem; margin-bottom: 1.8rem; line-height: 1.9; color: rgba(255,251,240,0.85); }
-        .about-content .kannada-text { font-size: 1.35rem; color: var(--flag-yellow); line-height: 1.7; }
+        .about-content p { font-size: 1.05rem; margin-bottom: 1.8rem; line-height: 1.9; color: rgba(255,245,224,0.82); }
+        .about-content .kannada-text { font-size: 1.35rem; color: var(--gold); line-height: 1.7; }
 
         .about-images { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .img-wrapper { border-radius: 10px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.4); }
+        .img-wrapper { border-radius: 10px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.6); }
         .img-wrapper.large { grid-column: 1/-1; height: 260px; }
         .img-wrapper.small { height: 190px; }
         .img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
-        .img-wrapper:hover img { transform: scale(1.08); }
-
-        /* Flag accent on about section */
-        .about-flag-tag {
-            display: inline-flex; gap: 0; border-radius: 3px; overflow: hidden;
-            margin-bottom: 1.5rem; height: 6px; width: 60px;
-        }
-        .about-flag-tag span:first-child { flex:1; background: var(--flag-yellow); }
-        .about-flag-tag span:last-child  { flex:1; background: var(--flag-red); }
+        .img-wrapper:hover img { transform: scale(1.07); }
 
         /* ── Highlights ── */
-        .highlights-section { background: var(--dark-gray); }
+        .highlights-section { background: var(--bg-section); }
         .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 
         .highlight-card {
             background: var(--card-bg); padding: 2.5rem 2rem;
             border-radius: 12px; text-align: center;
-            border: 1px solid rgba(255,255,255,0.06);
+            border: 1px solid rgba(212,175,55,0.08);
             transition: all 0.4s ease; position: relative; overflow: hidden;
         }
         .highlight-card::before {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--flag-yellow) 50%, var(--flag-red) 50%);
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
+            background: linear-gradient(90deg, var(--red) 50%, var(--gold) 50%);
             transform: scaleX(0); transition: transform 0.4s ease; transform-origin: left;
         }
-        .highlight-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.5); border-color: rgba(247,195,0,0.25); }
+        .highlight-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(139,0,0,0.4); border-color: rgba(212,175,55,0.3); }
         .highlight-card:hover::before { transform: scaleX(1); }
 
-        .highlight-icon { font-size: 2.2rem; color: var(--flag-yellow); margin-bottom: 1.2rem; }
-        .highlight-card h4.kannada-text { font-size: 1.2rem; margin-bottom: 0.4rem; color: var(--warm-ivory); }
+        .highlight-icon { font-size: 2.2rem; color: var(--gold); margin-bottom: 1.2rem; }
+        .highlight-card h4.kannada-text { font-size: 1.2rem; margin-bottom: 0.4rem; color: var(--text); }
         .highlight-card p { color: var(--muted); font-size: 0.88rem; margin-bottom: 1rem; }
         .status-badge {
             display: inline-block; padding: 3px 12px;
-            background: rgba(247,195,0,0.1); color: var(--flag-yellow);
+            background: rgba(212,175,55,0.08); color: var(--gold);
             border-radius: 20px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-            border: 1px solid rgba(247,195,0,0.3);
+            border: 1px solid rgba(212,175,55,0.25);
         }
 
         /* ── Schedule ── */
-        .schedule-section { background: var(--deep-black); }
+        .schedule-section { background: var(--bg); }
         .timeline-container { max-width: 800px; margin: 0 auto; position: relative; }
         .timeline-container::before {
             content: ''; position: absolute; left: 50%; transform: translateX(-50%);
             width: 2px; height: 100%;
-            background: linear-gradient(to bottom, var(--flag-yellow), var(--flag-red));
-            opacity: 0.3;
+            background: linear-gradient(to bottom, var(--red), var(--gold));
+            opacity: 0.35;
         }
         .timeline-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; position: relative; }
         .timeline-item:nth-child(even) { flex-direction: row-reverse; }
-
         .timeline-content {
             width: 45%; background: var(--card-bg); padding: 1.8rem;
-            border-radius: 10px; border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 10px; border: 1px solid rgba(212,175,55,0.08);
             transition: all 0.3s ease;
         }
-        .timeline-content:hover { border-color: var(--flag-yellow); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
-
+        .timeline-content:hover { border-color: var(--gold); box-shadow: 0 8px 24px rgba(139,0,0,0.4); }
         .timeline-dot {
             position: absolute; left: 50%; top: 50%;
             transform: translate(-50%,-50%);
             width: 18px; height: 18px;
-            background: var(--flag-red);
-            border: 4px solid var(--deep-black);
-            border-radius: 50%; z-index: 2;
-            transition: background 0.3s ease;
+            background: var(--red); border: 4px solid var(--bg);
+            border-radius: 50%; z-index: 2; transition: background 0.3s ease;
         }
-        .timeline-item:hover .timeline-dot { background: var(--flag-yellow); }
-        .time-slot { color: var(--flag-yellow); font-weight: 700; font-family: 'Montserrat', sans-serif; margin-bottom: 0.5rem; }
-        .timeline-content h4 { color: var(--warm-ivory); margin-bottom: 0.3rem; }
+        .timeline-item:hover .timeline-dot { background: var(--gold); }
+        .time-slot { color: var(--gold); font-weight: 700; font-family: 'Montserrat',sans-serif; margin-bottom: 0.5rem; }
+        .timeline-content h4 { color: var(--text); margin-bottom: 0.3rem; }
         .timeline-content p  { font-size: 0.88rem; color: var(--muted); margin-top: 0.3rem; }
 
         /* ── Gallery ── */
-        .gallery-section { background: var(--dark-gray); }
+        .gallery-section { background: var(--bg-section); }
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -296,116 +261,87 @@
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
         .gallery-item::after {
             content: ''; position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(10,10,10,0.85), rgba(204,26,26,0.1), transparent);
+            background: linear-gradient(to top, rgba(6,0,0,0.88), rgba(139,0,0,0.12), transparent);
             opacity: 0; transition: opacity 0.35s ease;
         }
-        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item:hover img { transform: scale(1.07); }
         .gallery-item:hover::after { opacity: 1; }
         .gallery-caption {
-            position: absolute; bottom: 18px; left: 18px; z-index: 2;
+            position: absolute; bottom: 16px; left: 18px; z-index: 2;
             opacity: 0; transform: translateY(8px); transition: all 0.35s ease;
-            font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem;
-            color: var(--warm-ivory);
+            font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 0.92rem;
+            color: var(--gold);
         }
         .gallery-item:hover .gallery-caption { opacity: 1; transform: translateY(0); }
 
-        /* Flag stripe between gallery items */
-        .gallery-flag-stripe {
-            width: 100%; height: 5px; display: flex;
-            border-radius: 3px; overflow: hidden; margin: 2.5rem 0;
-        }
-        .gallery-flag-stripe .y { flex:1; background: var(--flag-yellow); }
-        .gallery-flag-stripe .r { flex:1; background: var(--flag-red); }
-
         /* ── Participate ── */
-        .community-section { background: var(--warm-ivory); color: var(--deep-black); text-align: center; }
-        .community-section .section-title.kannada-text { color: var(--flag-red); }
-        .community-section p { color: #444; max-width: 600px; margin: 0 auto 3rem; }
+        .community-section { background: var(--gold); color: var(--bg); text-align: center; }
+        .community-section .section-title.kannada-text { color: var(--red-deep); }
+        .community-section p { color: rgba(6,0,0,0.7); max-width: 620px; margin: 0 auto 3rem; }
         .action-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
 
         /* ── Sponsors ── */
-        .sponsors-section { background: var(--deep-black); }
+        .sponsors-section { background: var(--bg); }
         .sponsors-tier { margin-bottom: 4rem; text-align: center; }
-        .tier-title {
-            font-size: 1.1rem; color: var(--flag-yellow);
-            text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2rem;
-        }
+        .tier-title { font-size: 1.1rem; color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2rem; }
         .sponsors-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; align-items: center; }
         .sponsor-logo {
             width: 200px; height: 90px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(212,175,55,0.04);
+            border: 1px solid rgba(212,175,55,0.1);
             border-radius: 8px;
             display: flex; align-items: center; justify-content: center;
-            color: rgba(255,255,255,0.25);
-            font-family: 'Montserrat', sans-serif; font-size: 0.85rem;
+            color: rgba(212,175,55,0.25); font-family: 'Montserrat',sans-serif; font-size: 0.85rem;
             transition: all 0.3s ease;
         }
-        .sponsor-logo:hover { background: rgba(247,195,0,0.08); color: var(--warm-ivory); border-color: rgba(247,195,0,0.4); }
+        .sponsor-logo:hover { background: rgba(212,175,55,0.1); color: var(--text); border-color: rgba(212,175,55,0.5); }
 
         /* ── Footer ── */
-        .footer {
-            background: var(--deep-black);
-            border-top: 0 solid transparent;
-            padding: 0 0 2rem 0;
-            position: relative;
-        }
-        .footer-flag {
-            width: 100%; height: 8px; display: flex;
-        }
-        .footer-flag .ffy { flex:1; background: var(--flag-yellow); }
-        .footer-flag .ffr { flex:1; background: var(--flag-red); }
-
+        .footer { background: var(--bg); padding: 0 0 2rem 0; }
+        .footer-stripe { width: 100%; height: 8px; display: flex; }
+        .footer-stripe .fs-r { flex: 1; background: var(--red); }
+        .footer-stripe .fs-g { flex: 1; background: var(--gold); }
         .footer-inner { padding: 4rem 0 2rem; }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
-
         .footer-brand h2 { margin-bottom: 0.8rem; }
         .footer-brand p  { color: var(--muted); margin-bottom: 0.4rem; font-size: 0.9rem; }
-
         .contact-info li { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; color: #ccc; font-size: 0.92rem; }
-        .contact-info i  { color: var(--flag-yellow); font-size: 1.1rem; width: 20px; }
-        .contact-info a:hover { color: var(--flag-yellow); }
-
+        .contact-info i  { color: var(--gold); font-size: 1.1rem; width: 20px; }
+        .contact-info a:hover { color: var(--gold); }
         .social-links { display: flex; gap: 0.8rem; margin-top: 1.5rem; }
         .social-links a {
             width: 38px; height: 38px; border-radius: 50%;
-            background: rgba(255,255,255,0.08);
+            background: rgba(212,175,55,0.08);
             display: flex; align-items: center; justify-content: center;
             transition: all 0.3s ease;
         }
-        .social-links a:hover { background: var(--flag-red); transform: translateY(-3px); }
-
+        .social-links a:hover { background: var(--red); transform: translateY(-3px); }
         .map-placeholder {
             width: 100%; height: 180px;
-            background: rgba(255,255,255,0.04);
+            background: rgba(212,175,55,0.03);
             border-radius: 8px; display: flex; align-items: center; justify-content: center;
-            color: #555; border: 1px dashed #333; text-align: center; font-size: 0.85rem;
+            color: #444; border: 1px dashed rgba(212,175,55,0.15); text-align: center; font-size: 0.85rem;
         }
+        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(212,175,55,0.08); }
+        .footer-tagline { font-size: 1.6rem; color: var(--gold); margin-bottom: 0.5rem; }
 
-        .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.07); }
-        .footer-tagline { font-size: 1.6rem; color: var(--flag-yellow); margin-bottom: 0.5rem; }
-
-        /* ── Floating WhatsApp ── */
+        /* ── WhatsApp FAB ── */
         .fab-whatsapp {
             position: fixed; bottom: 28px; right: 28px;
-            width: 58px; height: 58px; background: #25D366;
-            color: #fff; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
+            width: 58px; height: 58px; background: #25D366; color: #fff;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
             font-size: 1.8rem; z-index: 99;
             box-shadow: 0 4px 18px rgba(37,211,102,0.45);
             transition: transform 0.3s ease;
         }
         .fab-whatsapp:hover { transform: scale(1.1); }
 
-        /* ── Reveal animations ── */
+        /* ── Animations ── */
         .reveal { opacity: 0; transform: translateY(36px); transition: all 0.8s cubic-bezier(0.5,0,0,1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
         @keyframes fadeUp   { to { opacity: 1; transform: translateY(0); } }
         @keyframes kenburns { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
-        @keyframes pulse    { 0%  { box-shadow: 0 0 0 0   rgba(204,26,26,0.7); }
-                              70% { box-shadow: 0 0 0 18px rgba(204,26,26,0); }
-                              100%{ box-shadow: 0 0 0 0   rgba(204,26,26,0); } }
         @keyframes bounce {
             0%,20%,50%,80%,100% { transform: translateY(0) translateX(-50%); }
             40% { transform: translateY(-18px) translateX(-50%); }
@@ -414,9 +350,9 @@
 
         /* ── Responsive ── */
         @media (max-width: 992px) {
-            .hero-main-title { font-size: 3.8rem; }
+            .hero-main-title { font-size: 3.5rem; }
             .hero-sub-title  { font-size: 2rem; }
-            .about-grid      { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
             .timeline-container::before { left: 38px; }
             .timeline-item, .timeline-item:nth-child(even) { flex-direction: column; align-items: flex-start; padding-left: 70px; }
             .timeline-content { width: 100%; }
@@ -429,7 +365,7 @@
             .nav-links {
                 position: fixed; top: 0; right: -100%;
                 width: 70%; height: 100vh;
-                background: rgba(10,10,10,0.98); backdrop-filter: blur(12px);
+                background: rgba(6,0,0,0.98); backdrop-filter: blur(12px);
                 flex-direction: column; justify-content: center; align-items: center;
                 transition: right 0.4s ease;
             }
@@ -438,9 +374,9 @@
             .hero-main-title { font-size: 2.6rem; }
             .hero-sub-title  { font-size: 1.6rem; }
             .section-padding { padding: 4rem 0; }
+            .section-title   { font-size: 2rem; }
             .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
             .gallery-item.wide, .gallery-item.tall { grid-column: span 1; grid-row: span 1; }
-            .section-title { font-size: 2rem; }
         }
         @media (prefers-reduced-motion: reduce) {
             *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
@@ -450,13 +386,13 @@
 </head>
 <body>
 
-    <!-- Karnataka Flag Bar (top) -->
+    <!-- Red | Gold stripe bar -->
     <div class="flag-bar" aria-hidden="true">
-        <div class="fb-yellow"></div>
-        <div class="fb-red"></div>
+        <div class="fb-r"></div>
+        <div class="fb-g"></div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
@@ -473,7 +409,7 @@
         </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero — background: Hampi Virupaksha Temple ruins -->
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
@@ -487,9 +423,9 @@
                 <a href="#video" class="btn btn-outline">Watch Trailer</a>
             </div>
         </div>
-        <div class="hero-flag-stripe" aria-hidden="true">
-            <div class="hfs-y"></div>
-            <div class="hfs-r"></div>
+        <div class="hero-stripe" aria-hidden="true">
+            <div class="hs-r"></div>
+            <div class="hs-g"></div>
         </div>
         <a href="#video" class="scroll-indicator" aria-label="Scroll Down">
             <i class="fas fa-chevron-down"></i>
@@ -501,7 +437,7 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2 class="section-title">Experience the Spirit of Karnataka</h2>
-                <div class="flag-divider"><div class="fd-y"></div><div class="fd-r"></div></div>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
             </div>
             <div class="video-container reveal">
                 <iframe
@@ -520,27 +456,26 @@
     <section id="about" class="about-section section-padding">
         <div class="container about-grid">
             <div class="about-content reveal">
-                <div class="about-flag-tag" aria-hidden="true"><span></span><span></span></div>
                 <div class="section-header" style="text-align:left; margin-bottom:2rem;">
                     <h2 class="section-title kannada-text">ನಮ್ಮ ನಾಡು, ನಮ್ಮ ಹೆಮ್ಮೆ</h2>
-                    <div class="flag-divider" style="margin:0;"><div class="fd-y"></div><div class="fd-r"></div></div>
+                    <div class="rg-divider" style="margin:0.8rem 0 0 0;"><div class="d-r"></div><div class="d-g"></div></div>
                 </div>
                 <p class="kannada-text">ಕರ್ನಾಟಕದ ಏಕೀಕರಣ, ಕನ್ನಡ ಭಾಷೆಯ ವೈಭವ ಮತ್ತು ನಮ್ಮ ನಾಡಿನ ಸಂಸ್ಕೃತಿ, ಪರಂಪರೆ ಹಾಗೂ ಹೆಮ್ಮೆಯನ್ನು ಆಚರಿಸುವ ಮಹೋತ್ಸವವೇ ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ.</p>
-                <p>Karnataka Rajyotsava celebrates the formation of Karnataka, the richness of the Kannada language, and the extraordinary cultural heritage of our beloved state. Join us in a premium celebration that honors our roots while embracing the modern spirit of Bengaluru.</p>
-                <a href="#schedule" class="btn btn-yellow" style="margin-top:0.5rem;">View Program</a>
+                <p>Karnataka Rajyotsava celebrates the formation of Karnataka, the richness of the Kannada language, and the extraordinary cultural heritage of our beloved state. From the grandeur of Hampi to the splendour of Mysore — join us in honouring our roots.</p>
+                <a href="#schedule" class="btn btn-gold" style="margin-top:0.5rem;">View Program</a>
             </div>
             <div class="about-images reveal">
-                <!-- Mysore Palace illuminated -->
+                <!-- Mysore Palace — most iconic ancient Karnataka monument -->
                 <div class="img-wrapper large">
-                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=90&w=1200&auto=format&fit=crop" alt="Mysore Palace, Karnataka" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=90&w=1200&auto=format&fit=crop" alt="Mysore Palace — ಮೈಸೂರು ಅರಮನೆ" loading="lazy">
                 </div>
-                <!-- Hampi ruins -->
+                <!-- Hampi ruins — UNESCO World Heritage Site -->
                 <div class="img-wrapper small">
-                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=600&auto=format&fit=crop" alt="Hampi Ruins, Karnataka" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=600&auto=format&fit=crop&crop=left" alt="Hampi Virupaksha — ಹಂಪಿ" loading="lazy">
                 </div>
-                <!-- Western Ghats / Coorg green hills -->
+                <!-- Hampi boulder landscape — ancient Karnataka skyline -->
                 <div class="img-wrapper small">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=90&w=600&auto=format&fit=crop" alt="Western Ghats, Karnataka" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=600&auto=format&fit=crop&crop=right" alt="Hampi Landscape — ಹಂಪಿ ಭೂದೃಶ್ಯ" loading="lazy">
                 </div>
             </div>
         </div>
@@ -551,7 +486,7 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2 class="section-title">Event Highlights</h2>
-                <div class="flag-divider"><div class="fd-y"></div><div class="fd-r"></div></div>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
             </div>
             <div class="highlights-grid">
                 <div class="highlight-card reveal">
@@ -599,8 +534,8 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2 class="section-title kannada-text">ನಮ್ಮ ಸಂಭ್ರಮದ ಕಾರ್ಯಕ್ರಮಗಳು</h2>
-                <p style="color:var(--flag-yellow);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:3px;margin-bottom:1rem;">Celebration Schedule</p>
-                <div class="flag-divider"><div class="fd-y"></div><div class="fd-r"></div></div>
+                <p style="color:var(--gold);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:3px;margin-bottom:1rem;">Celebration Schedule</p>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
             </div>
             <div class="timeline-container">
                 <div class="timeline-item reveal">
@@ -645,51 +580,51 @@
                 </div>
             </div>
             <div class="text-center" style="margin-top:3rem;">
-                <p style="color:#555;font-style:italic;font-size:0.9rem;">* Schedule subject to final confirmation.</p>
+                <p style="color:#444;font-style:italic;font-size:0.9rem;">* Schedule subject to final confirmation.</p>
             </div>
         </div>
     </section>
 
-    <!-- Gallery -->
+    <!-- Gallery — Famous Ancient Places of Karnataka -->
     <section id="gallery" class="gallery-section section-padding">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title kannada-text">ಕರ್ನಾಟಕದ ವೈಭವ</h2>
-                <p style="color:rgba(255,251,240,0.6);margin-bottom:1rem;">Karnataka Pride Gallery</p>
-                <div class="flag-divider"><div class="fd-y"></div><div class="fd-r"></div></div>
+                <h2 class="section-title kannada-text">ಕರ್ನಾಟಕದ ಪ್ರಾಚೀನ ವೈಭವ</h2>
+                <p style="color:rgba(255,245,224,0.5);margin-bottom:1rem;">Ancient Wonders of Karnataka</p>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
             </div>
-
             <div class="gallery-grid">
-                <!-- Mysore Palace wide banner -->
+
+                <!-- 1. Mysore Palace — wide banner -->
                 <div class="gallery-item wide reveal">
-                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=90&w=1400&auto=format&fit=crop" alt="Mysore Palace" loading="lazy">
-                    <div class="gallery-caption">Mysore Palace — ಮೈಸೂರು ಅರಮನೆ</div>
+                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=90&w=1600&auto=format&fit=crop" alt="Mysore Palace" loading="lazy">
+                    <div class="gallery-caption">ಮೈಸೂರು ಅರಮನೆ — Mysore Palace</div>
                 </div>
-                <!-- Hampi tall -->
+
+                <!-- 2. Hampi Virupaksha Temple — tall -->
                 <div class="gallery-item tall reveal">
-                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=800&auto=format&fit=crop" alt="Hampi Ruins" loading="lazy">
-                    <div class="gallery-caption">Hampi — ಹಂಪಿ</div>
+                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=900&auto=format&fit=crop" alt="Hampi Virupaksha Temple" loading="lazy">
+                    <div class="gallery-caption">ಹಂಪಿ ವಿರೂಪಾಕ್ಷ — Hampi</div>
                 </div>
-                <!-- Coorg / Western Ghats green hills -->
+
+                <!-- 3. Hampi Stone Chariot / boulder landscape -->
                 <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=90&w=800&auto=format&fit=crop" alt="Western Ghats Karnataka" loading="lazy">
-                    <div class="gallery-caption">Western Ghats — ಪಶ್ಚಿಮ ಘಟ್ಟ</div>
+                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=800&auto=format&fit=crop&crop=entropy" alt="Hampi Stone Chariot" loading="lazy">
+                    <div class="gallery-caption">ಹಂಪಿ ರಥ — Stone Chariot</div>
                 </div>
-                <!-- Bangalore skyline / modern India -->
+
+                <!-- 4. Mysore Palace illuminated / evening -->
                 <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?q=90&w=800&auto=format&fit=crop" alt="Bengaluru City" loading="lazy">
-                    <div class="gallery-caption">Namma Bengaluru — ನಮ್ಮ ಬೆಂಗಳೂರು</div>
+                    <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=90&w=800&auto=format&fit=crop&crop=bottom" alt="Mysore Palace Evening" loading="lazy">
+                    <div class="gallery-caption">ಮೈಸೂರು ದಸರಾ — Dasara</div>
                 </div>
-                <!-- Indian classical dance / cultural performance -->
-                <div class="gallery-item reveal">
-                    <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?q=90&w=800&auto=format&fit=crop" alt="Karnataka Classical Dance" loading="lazy">
-                    <div class="gallery-caption">Cultural Heritage — ಸಾಂಸ್ಕೃತಿಕ ಪರಂಪರೆ</div>
-                </div>
-                <!-- Jog Falls / Karnataka waterfall landscape wide -->
+
+                <!-- 5. Hampi Vittala Temple complex — wide -->
                 <div class="gallery-item wide reveal">
-                    <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=90&w=1400&auto=format&fit=crop" alt="Karnataka Natural Beauty" loading="lazy">
-                    <div class="gallery-caption">Natural Beauty — ಪ್ರಕೃತಿ ಸೌಂದರ್ಯ</div>
+                    <img src="https://images.unsplash.com/photo-1596417726591-62024db21e05?q=90&w=1600&auto=format&fit=crop&crop=top" alt="Hampi Vittala Temple Complex" loading="lazy">
+                    <div class="gallery-caption">ವಿಟ್ಟಲ ದೇವಾಲಯ — Vittala Temple, Hampi</div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -697,14 +632,14 @@
     <!-- Participate -->
     <section id="participate" class="community-section section-padding">
         <div class="container reveal">
-            <div class="flag-divider" style="margin-bottom:2rem;"><div class="fd-y"></div><div class="fd-r"></div></div>
+            <div class="rg-divider" style="margin-bottom:2rem;"><div class="d-r"></div><div class="d-g"></div></div>
             <h2 class="section-title kannada-text" style="margin-bottom:0.5rem;">ಒಗ್ಗಟ್ಟಿನಲ್ಲಿ ನಮ್ಮ ಕನ್ನಡದ ಸಂಭ್ರಮ</h2>
             <h3 style="font-size:1.4rem;margin-bottom:1.5rem;">Together, We Celebrate the Pride of Karnataka</h3>
-            <p>Purva Zenium residents, this is our festival! Whether you want to perform on stage, help organize, or simply join us for the grand feast — your participation makes it special.</p>
+            <p>Purva Zenium residents — your participation makes this special. Perform, organise, or simply join us for the grand feast.</p>
             <div class="action-buttons">
                 <a href="#contact" class="btn btn-primary">Register Your Family</a>
-                <a href="#contact" class="btn btn-yellow">Participate in Events</a>
-                <a href="#contact" class="btn btn-outline" style="border-color:#333;color:#333;">Volunteer</a>
+                <a href="#contact" class="btn btn-gold" style="background:var(--red-deep);color:var(--gold);border-color:var(--red-deep);">Participate in Events</a>
+                <a href="#contact" class="btn btn-outline" style="border-color:var(--red-deep);color:var(--red-deep);">Volunteer</a>
             </div>
         </div>
     </section>
@@ -714,8 +649,8 @@
         <div class="container">
             <div class="section-header reveal">
                 <h2 class="section-title kannada-text">ನಮ್ಮ ಸಂಭ್ರಮದ ಸಹಯೋಗಿಗಳು</h2>
-                <p style="color:var(--flag-yellow);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;">Our Valued Sponsors</p>
-                <div class="flag-divider"><div class="fd-y"></div><div class="fd-r"></div></div>
+                <p style="color:var(--gold);font-family:'Montserrat',sans-serif;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;">Our Valued Sponsors</p>
+                <div class="rg-divider"><div class="d-r"></div><div class="d-g"></div></div>
             </div>
             <div class="sponsors-tier reveal">
                 <h4 class="tier-title">Platinum Sponsors</h4>
@@ -739,14 +674,14 @@
 
     <!-- Footer -->
     <footer id="contact" class="footer">
-        <div class="footer-flag" aria-hidden="true">
-            <div class="ffy"></div>
-            <div class="ffr"></div>
+        <div class="footer-stripe" aria-hidden="true">
+            <div class="fs-r"></div>
+            <div class="fs-g"></div>
         </div>
         <div class="container footer-inner">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h2 class="kannada-text text-yellow">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026</h2>
+                    <h2 class="kannada-text text-gold">ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2026</h2>
                     <h3 style="margin-bottom:1rem;">KANNADA RAJYOTSAVA</h3>
                     <p>Purva Zenium, Bengaluru</p>
                     <p>Event Date: 28 November 2026</p>
@@ -756,61 +691,56 @@
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                <div class="footer-contact">
-                    <h4 style="margin-bottom:1.5rem;color:var(--flag-yellow);">Contact Us</h4>
+                <div>
+                    <h4 style="margin-bottom:1.5rem;color:var(--gold);">Contact Us</h4>
                     <ul class="contact-info">
                         <li><i class="fas fa-user"></i><span>Event Coordinator: <strong>Manu</strong></span></li>
                         <li><i class="fas fa-phone-alt"></i><a href="tel:+919742992465">+91 97429 92465</a></li>
                         <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/919742992465" target="_blank" rel="noopener">WhatsApp Message</a></li>
                     </ul>
                 </div>
-                <div class="footer-map">
-                    <h4 style="margin-bottom:1.5rem;color:var(--flag-yellow);">Venue</h4>
+                <div>
+                    <h4 style="margin-bottom:1.5rem;color:var(--gold);">Venue</h4>
                     <div class="map-placeholder">
-                        <p><i class="fas fa-map-marker-alt" style="color:var(--flag-red);font-size:1.5rem;display:block;margin-bottom:0.5rem;"></i>
-                        Google Maps Integration Placeholder<br>
-                        <span style="color:#444;">(Purva Zenium, Bengaluru)</span></p>
+                        <p>
+                            <i class="fas fa-map-marker-alt" style="color:var(--red);font-size:1.4rem;display:block;margin-bottom:0.5rem;"></i>
+                            Google Maps Integration Placeholder<br>
+                            <span style="color:#333;">(Purva Zenium, Bengaluru)</span>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <h3 class="footer-tagline kannada-text">ಜೈ ಕರ್ನಾಟಕ! ಜೈ ಕನ್ನಡ!</h3>
-                <p style="color:#444;font-size:0.85rem;">Celebrating the Pride of Karnataka. Designed for Purva Zenium.</p>
+                <p style="color:#333;font-size:0.85rem;">Celebrating the Pride of Karnataka. Designed for Purva Zenium.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
     <a href="https://wa.me/919742992465" class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
         const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        });
+        window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 50));
 
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks      = document.getElementById('navLinks');
-
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             const icon = mobileMenuBtn.querySelector('i');
             icon.classList.toggle('fa-bars',  !navLinks.classList.contains('active'));
             icon.classList.toggle('fa-times',  navLinks.classList.contains('active'));
         });
-
         navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
             navLinks.classList.remove('active');
-            const icon = mobileMenuBtn.querySelector('i');
-            icon.classList.replace('fa-times','fa-bars');
+            mobileMenuBtn.querySelector('i').classList.replace('fa-times','fa-bars');
         }));
 
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); obs.unobserve(e.target); } });
         }, { threshold: 0.12 });
-
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
